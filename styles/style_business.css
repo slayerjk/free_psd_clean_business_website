@@ -1,0 +1,237 @@
+/* TYPOGRAPHY --------------------------------------------------- 
+.header-title = font: 60px/16px "Myriad Pro"; color : #eeeeee;
+.header-menu = font: 16px/42px ; color: #eeeeee;
+---
+.features-title = font: bold 60px/16px "Myriad Pro"; color: #333333;
+.features-slogan = font: 50px/16px "Myriad Pro"; color: #bbbbbb;
+.features-details = font: 34px/42px "Myriad Pro"; color: #555555;
+.features-col-title = font: 40px/40px "Myriad Pro"; color: #ffffff;
+.features-col-details = font: 14px/21px "Arial"; color: #ffffff;
+.features-col-btn = font: 18px/24px "Myriad Pro"; color: #ffffff;
+---
+.testimonials .title = font: 24PX/42PX "Myriad Pro"; color: #555555;
+.testimonials .details = font: 14px/21px "Arial"; color: #555555;
+.testimonials-client-author = font: 14px/18px "Arial"; color: #555555;
+.project-about = font: 20px/16px "Arial"; color: #888888;
+.project-more = font: 14px/20px "Arial"; color: #00aeef;
+--
+.footer = font: 16px/16px "Arial"; color: #888888;
+------------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;/* 1095px*/
+    font-size: 100%
+}
+.centerer {
+    margin: 0 auto;
+    width: 945px; /*1100px(950px);*/
+}
+.blue-font {
+    color: #00aeef;
+}
+.gray-font {
+    color: #bbbbbb;
+}
+/*HEADER--------------------------------------------------------------*/
+.header {
+    background-color: #272c2f;
+}
+.header .blue-font {
+    color: #00aeef;
+}
+.header .centerer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+.header a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+.header-title {
+    display: inline-block;
+    font: 3.75em "Myriad Pro"; /* 60px/16px  60/16 */
+    text-align: left;
+    color : #eeeeee;
+}
+.header-menu {
+    display: inline-block;
+    font: 1em "Arial"; /*16px/42px 16/16 */
+    text-align: right;
+    color: #eeeeee;
+}
+.header-menu a:hover {
+    text-decoration: underline;
+}
+/*FEATURES--------------------------------------------------------------*/
+.features {
+    text-align: left;
+    background-color: #ffffff;
+}
+.features .centerer {
+    padding: 65px 0 45px 0;
+}
+.features-title {
+    margin: 0;
+    font: bold 3.75em "Myriad Pro"; /*60px/16px 60/16 */
+    color: #333333;
+}
+.features-slogan {
+    margin: 0; 
+    margin-bottom: 37px;
+    font: 3.125em "Myriad Pro"; /*50px/16px 50/16 */
+    color: #bbbbbb;
+}
+.features-details {
+    font:  2.125em "Myriad Pro"; /*34px/42px 34/16*/
+    border-bottom: 3px dotted #cccccc;
+    border-top: 3px dotted #cccccc;
+    color: #555555;
+}
+.features-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 45px;
+    min-height: 350px;
+    color: #ffffff;
+}
+.features-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px 25px 35px 25px;
+    width: 228px;/*278px*/
+    height: 285px;
+    text-align: center;
+    background-color: #00aeef;
+    box-shadow: 4px 4px #cfcfcf;
+}
+.features-col-title {
+    margin-bottom: 20px;
+    font: 2.5em "Myriad Pro"; /*40px/40px 40/16 */
+    color: #ffffff;
+}
+.features-col-details {
+    border-top: 2px dotted #ffffff;
+    font: 0.875em "Arial"; /*14px/21px 14/16 */
+    color: #ffffff;
+}
+.features-col-details p {
+    margin-top: 25px;
+}
+.features-col-btn {
+    display: block;
+    margin-top: auto;
+    padding: 10px 0;
+    width: 230px;
+    font: 1.125em "Myriad Pro"; /*18px/24px 18/16 */
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #0076a3;
+    text-decoration: none;
+}
+.features-col-btn:hover {
+    background: #008a93;   
+}
+/*---Testimonials--------------------------------------------------------------*/
+.testimonials {
+    background-color: #ffffff;
+}
+.testimonials .centerer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 36px 0 40px 0;
+    border-top: 3px dotted #cccccc;
+    border-bottom: 3px dotted #cccccc;
+}
+.testimonials-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 477px;
+    position: relative;
+}
+.testimonials .title {
+    font: 1.5em "Myriad Pro"; /*24px/42px 24/16 */
+    color: #555555;
+}
+.testimonials .details {
+    font: 0.875em "Arial"; /*14px/21px 14/16 */
+    color: #555555;
+}
+.clients .title {
+    display: block;
+}
+.testimonial-client {
+    position: relative;
+    padding-left: 108px;
+    margin-bottom: 33px;
+}
+.testimonials-client-photo{
+    position: absolute;
+    top: 15px;
+    left: 0;        
+}
+.testimonials-client .details {
+    display: block;
+}
+testimonials-client-author {
+    font: 1em "Arial"; /*14px/18px 14/14 */
+    color: #555555;
+}
+.testimonials-client-author a{
+    text-decoration: none;
+}
+.testimonials-client-author a:hover{
+    text-decoration: underline;   
+}
+.testimonials-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+    width: 477px;
+    border-left: 3px dotted #cccccc;
+}
+.project .title  {
+    padding-left: 33px;
+    display: block;
+}
+.project-about {
+    display: block;
+    font: 1.25em "Arial"; /*20px/16px 20/16 */
+    color: #888888;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+.project .details{
+    display: block;
+    padding-top: 15px;
+}
+.project-more {
+    display: block;
+    margin-top: auto;
+    padding-top: 10px;
+    font: 0.875em "Arial"; /*14px/20px 14/16 */
+    color: #00aeef;
+}
+.project-more:hover {
+    text-decoration: none;
+}
+/*---Footer----------------------------------------------*/
+.footer {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    font: 1em "Arial"; /*16px/16px 16/16*/
+    color: #888888;
+}
